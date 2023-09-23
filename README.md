@@ -2,6 +2,16 @@
 
 The AI-Soundscape is uploading....
 
+<h3 align="center"> Figure 1: The DCNN-CaF model with only Mel features.</h3>
+<div align="center">
+<img src="figures/only_mel.png" width=100%/> 
+</div>  
+
+<h3 align="center"> Figure 2: The DCNN-CaF model with only RMS features.</h3>
+<div align="center">
+<img src="figures/only_rms.png" width=100%/> 
+</div>  
+
 # Run models
 
 ```1) Unzip the Dataset under the application folder```
@@ -94,7 +104,14 @@ SSC:
         AUC: 0.8509725627182434
 ``` 
 
-## 3) Visualization
+## 3) Computational overhead of models
+
+<h3 align="center"> Table 1: Details of the parameters and computational overhead of models used and proposed in the paper.</h3>
+<div align="center">
+<img src="figures/model_train_inference_cost.PNG" width=100%/> 
+</div>  
+
+# Visualization
 
 Attention distributions of the cross-attention-based fusion module in the DCNN-CaF model. The 8 heads in the upper row come from MHA1, and the 8 heads in the lower row come from MHA2.
 
