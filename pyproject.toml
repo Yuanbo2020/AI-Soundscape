@@ -1,0 +1,21 @@
+[project]
+name = "AI-Soundscape"
+version = "0.1"
+description = "AI-Based Soundscape Analysis: Jointly Identifying Sound Sources and Predicting Annoyance"
+authors = [
+    {name = "Yuanbo Hou", email = "Yuanbo.Hou@UGent.be"},
+    {name = "Andrew Mitchell", email = "andrew.mitchell.18@ucl.ac.uk"},
+]
+dependencies = [
+    "torch>=2.1.1",
+    "torchvision>=0.16.1",
+    "torchaudio>=2.1.1",
+    "h5py>=3.10.0",
+    "matplotlib>=3.8.2",
+    "timm>=0.9.12",
+    "scikit-learn>=1.3.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
