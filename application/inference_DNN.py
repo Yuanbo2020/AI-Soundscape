@@ -44,7 +44,7 @@ def main(argv):
     print(model_event.keys())
     model.load_state_dict(model_event['state_dict'])
 
-    cuda = 1
+    cuda = config.cuda
     if config.cuda:
         model.cuda()
 

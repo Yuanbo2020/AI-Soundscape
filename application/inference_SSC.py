@@ -38,6 +38,7 @@ def count_parameters(model):
 def main(argv):
     parser = argparse.ArgumentParser()
     parser.add_argument('-model', type=str, required=True)
+    parser.add_argument('-cuda', type=int, required=False)
     args = parser.parse_args()
 
     model_type = args.model
@@ -57,8 +58,8 @@ def main(argv):
     model_event = torch.load(event_model_path, map_location='cpu')
     model.load_state_dict(model_event['state_dict'])
 
-    cuda = 1
-    if config.cuda:
+    cuda = args.cuda if args.cuda is not None else config.cuda
+    if cuda:
         model.cuda()
 
     generator = DataGenerator(batch_size=64)
