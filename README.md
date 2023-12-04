@@ -1,7 +1,5 @@
 # AI-Based Soundscape Analysis: Jointly Identifying Sound Sources and Predicting Annoyance
 
-The AI-Soundscape is uploading....
-
 <h3 align="center"> Figure 1: The DCNN-CaF model with only Mel features.</h3>
 <div align="center">
 <img src="figures/only_mel.png" width=100%/> 
@@ -11,6 +9,24 @@ The AI-Soundscape is uploading....
 <div align="center">
 <img src="figures/only_rms.png" width=100%/> 
 </div>  
+
+# Citation
+Please feel free to use the code and models, and consider citing our paper as
+```bibtex
+@article{10.1121/10.0022408,
+    author = {Hou, Yuanbo and Ren, Qiaoqiao and Zhang, Huizhong and Mitchell, Andrew and Aletta, Francesco and Kang, Jian and Botteldooren, Dick},
+    title = "{AI-based soundscape analysis: Jointly identifying sound sources and predicting annoyancea)}",
+    journal = {The Journal of the Acoustical Society of America},
+    volume = {154},
+    number = {5},
+    pages = {3145-3157},
+    year = {2023},
+    month = {11}, 
+    issn = {0001-4966},
+    doi = {10.1121/10.0022408},
+    url = {https://doi.org/10.1121/10.0022408}, 
+}
+```
 
 # Run models
 
@@ -140,5 +156,4 @@ Attention distributions of the cross-attention-based fusion module in the DCNN-C
 <div align="center">
 <img src="figures/demo5.png" width=100%/> 
 </div>  
-
-## To be continued...
+ 
